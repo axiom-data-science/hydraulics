@@ -1,0 +1,7 @@
+FROM python:3.7-slim-buster
+
+RUN pip install confluent_kafka requests typer
+
+COPY image_ingestor.py /app/image_ingestor.py
+
+ENTRYPOINT ["python", "/app/image_ingestor.py"]

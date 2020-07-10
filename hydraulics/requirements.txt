@@ -1,0 +1,18 @@
+avro-python3
+confluent_kafka
+faust[rocksdb,fast]
+fastavro
+keras_preprocessing==1.1.0
+numpy
+pillow
+phasepack
+pyfftw
+pytest
+requests
+scipy
+scikit-image
+typer
+
+# used for testing
+mock
+responses

@@ -1,0 +1,4 @@
+avro-python3
+confluent_kafka
+requests
+wget

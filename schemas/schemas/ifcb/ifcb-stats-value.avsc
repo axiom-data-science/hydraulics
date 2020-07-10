@@ -1,0 +1,57 @@
+{
+    "type": "record",
+    "namespace": "ifcb.stats",
+    "name": "value",
+    "fields": [
+        {
+            "name": "time",
+            "type": "int",
+            "doc": "Timestamp of the sample (UTC)."
+        },
+        {
+            "name": "ifcb_id",
+            "type": "string",
+            "doc": "IFCB station id (e.g. ifcb104)."
+        },
+        {
+            "name": "roi",
+            "type": "int",
+            "doc": "ROI id. The sample number within a PID."
+        },
+        {
+            "name": "name",
+            "type": "string",
+            "doc": "Common English name of the labeled sample."
+        },
+        {
+            "name": "classifier",
+            "type": "string",
+            "doc": "Name and version of classifier used to label sample."
+        },
+        {
+            "name": "prob",
+            "type": "float",
+            "doc": "Probability from classifier associated with predicted label."
+        },
+        {
+            "name": "classification_time",
+            "type": "int",
+            "doc": "Timestamp of the classification."
+        },
+        {
+            "name": "biovolume",
+            "type": "float",
+            "doc": "Scaled biovolume [um^3] (biovolume * (1/3.4)^3 from ifcb-analysis)"
+        },
+        {
+            "name": "carbon",
+            "type": "float",
+            "doc": "Carbon content [pgC] (log_10(C) = log(a) + b * log_10(biovolume)"
+        },
+        {
+            "name": "hab",
+            "type": "boolean",
+            "doc": "True if sample is a HAB species"
+        }
+    ]
+}

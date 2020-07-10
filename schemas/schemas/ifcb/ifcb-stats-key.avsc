@@ -1,0 +1,17 @@
+{
+    "type": "record",
+    "namespace": "ifcb.stats",
+    "name": "key",
+    "fields": [
+        {
+            "name": "pid",
+            "type": "string",
+            "doc": "PID for bin (D%Y%m%DT%H%M%S_ifcbNNN)."
+        },
+        {
+            "name": "roi",
+            "type": "int",
+            "doc": "ROI id. The sample number within a PID."
+        }
+    ]
+}
